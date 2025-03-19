@@ -13,8 +13,8 @@ const MenuLinks = [ { id: 1, name: 'kuakua special', url: '/' },
 export default function Navbar() {
     return (
         <div className='bg-slate-500 text-slate-800'>
-            <div className='container flex justify-between py-4 sm:py-3'>
-                <div className='font-bold'>
+            <div className='container flex justify-between py-4 sm:py-3 '>
+                <div className='font-extrabold text-2xl'>
                     ቋቋ
                 </div>
                 <div>
