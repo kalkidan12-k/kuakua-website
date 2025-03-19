@@ -1,5 +1,5 @@
 import React from 'react';
-import {  FaChevronDown} from 'react-icons/fa';
+import {  FaChevronDown, FaUser} from 'react-icons/fa';
 const Navlinks = [
     { id: 1, title: 'Home', url: '/' },
     { id: 2, title: 'About', url: '/about' },
@@ -48,7 +48,10 @@ export default function Navbar() {
     </div>
 </li>
 <li>
-    <but></but>
+    <button className='flex justify-center items-center gap-2 bg-sky-400 text-xl  px-4 py-2 h-[40px] text-white hover:scale-105 duration-300 font-semibold'>
+        <FaUser/>
+        My account
+    </button>
 </li>
                     </ul>
                 </div>
