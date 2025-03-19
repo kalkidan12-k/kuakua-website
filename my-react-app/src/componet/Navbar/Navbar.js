@@ -47,6 +47,9 @@ export default function Navbar() {
         </ul>
     </div>
 </li>
+<li>
+    <but></but>
+</li>
                     </ul>
                 </div>
             </div>
