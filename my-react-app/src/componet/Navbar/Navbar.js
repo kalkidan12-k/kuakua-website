@@ -6,7 +6,10 @@ const Navlinks = [
     { id: 3, title: 'Services', url: '/services' },
     { id: 4, title: 'Contact', url: '/contact' },
 ];
-const MenuLinks = ['Menu 1', 'Menu 2', 'Menu 3', 'Menu 4'];
+const MenuLinks = [ { id: 1, name: 'kuakua special', url: '/' },
+    {id: 2, name: 'kuakua special', url: '/' },
+    { id: 3, name: 'sandwich', url: '/' },
+    { id: 4, name: 'chips', url: '/' },];
 export default function Navbar() {
     return (
         <div className='bg-slate-500 text-slate-800'>
@@ -22,24 +25,28 @@ export default function Navbar() {
                             </li>
                             
                         ))}
-                        <li className=' cursor-pointer group'>
-                            <a  href="/#" className=' hover:bg-sky-600 text-slate-800 px-4 py-2 rounded-md font-semibold'>
-                            <div className='flex items-center gap-2'>
-                            menu
-                                <span>
-                                    <FaChevronDown className='group-hover:rotate-180 duration-300'/>
-                                </span>
-                            </div>
-                            </a>
-                            <div>
-                                <ul>
-                                    {MenuLinks.map((data) => (
-                                        <li key={data.id}>
-                                            <a  href="/#" className=' hover:bg-sky-600 text-slate-800 px-4 py-2 rounded-md font-semibold'>{data}</a>
-                                        </li>
-                                    ))}</ul>
-                            </div>
-                        </li>
+                        <li className='cursor-pointer group relative'>
+    <a href="/#" className='hover:bg-sky-600 text-slate-800 px-4 py-2 rounded-md font-semibold'>
+        <div className='flex items-center gap-2'>
+            menu
+            <span>
+                <FaChevronDown className='group-hover:rotate-180 duration-300' />
+            </span>
+        </div>
+    </a>
+    {/* Dropdown menu */}
+    <div className='absolute z-50 hidden group-hover:block w-[200px] bg-white text-black shadow-md'>
+        <ul>
+            {MenuLinks.map(({ id, name, url }) => (
+                <li key={id}>
+                    <a href={url} className='block px-4 py-2 hover:bg-sky-600 text-slate-800 rounded-md font-semibold'>
+                        {name}
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</li>
                     </ul>
                 </div>
             </div>
