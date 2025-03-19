@@ -7,7 +7,7 @@ const Navlinks = [
     { id: 4, title: 'Contact', url: '/contact' },
 ];
 const MenuLinks = [ { id: 1, name: 'kuakua special', url: '/' },
-    {id: 2, name: 'kuakua special', url: '/' },
+    {id: 2, name: 'kuakua normal', url: '/' },
     { id: 3, name: 'sandwich', url: '/' },
     { id: 4, name: 'chips', url: '/' },];
 export default function Navbar() {
