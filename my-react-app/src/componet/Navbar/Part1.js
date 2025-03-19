@@ -1,5 +1,5 @@
 import React from 'react';
-
+import tea from '../../images/teaandcoffe/te.jpg';
 
 export default function Part1() {
   return (
@@ -13,10 +13,10 @@ export default function Part1() {
               Delicious snacks delivered to your door from Kuakua.
             </p>
           </div>
-          {/* Image Section  <div>
-            <img src={te} alt='Fast Food' className='w-full h-auto rounded-lg shadow-lg' />
-          </div>*/}
-          
+          {/* Image Section */}
+          <div>
+            <img src={tea} alt='Fast Food' className='w-full h-auto rounded-lg shadow-lg' />
+          </div>
         </div>
       </div>
     </div>
