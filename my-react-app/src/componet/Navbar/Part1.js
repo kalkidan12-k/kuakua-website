@@ -8,16 +8,16 @@ export default function Part1() {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]'>
           {/* Text Section */}
           <div className='font-bold text-2xl space-y-7 text-dark order-2 sm:order-1'>
-            <h1 className='text-4xl'>
+            <h1 className='text-4xl font-serif'>
               FRESH AND HEALTHY SNACK <span className='text-sky-300 font-cursive text-5xl'>DELIVERY</span> <br/>IN KUAKUA
             </h1>
             <p className='lg:pr-64'>
               Delicious snacks delivered to your door from Kuakua.
             </p>
             {/* Button Section */}
-            <div>
-              <PrimaryButton />
-            </div>
+            <div className='flex justify-center mt-10 sm:mt-14'>
+                    <PrimaryButton/>
+                  </div>
           </div>
           {/* Video Section */}
           <div className='order-1 relative z-30 sm:order-2'>
