@@ -17,12 +17,14 @@ tast the HEALTHY difference
             who want eating healthy and tasty food
         </p>
       </div> 
+      
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-32 '>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-10 '>
+      <div></div>
        <div>
         <p >
-                     {""}
-            we know that <span>time</span> is the  greatest value modern world 
+        {""}
+         we know that <span>time</span> is the  greatest value modern world 
             our healthy snack plan delivery services good tast in kuakua
             who want eating healthy and tasty food
         </p>
