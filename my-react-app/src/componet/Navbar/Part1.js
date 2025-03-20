@@ -18,7 +18,7 @@ export default function Part1() {
             </div>
           </div>
           {/* Image Section */}
-          <div className='order-1  relative z-30 sm:order-2'>
+          <div className='order-1  relative z-30sm:order-2'>
             <img src="/fastFood.jpeg" alt="Fast Food" className="w-full sm:scale-125 sm:-translate-y-17" />
           </div>
         </div>
