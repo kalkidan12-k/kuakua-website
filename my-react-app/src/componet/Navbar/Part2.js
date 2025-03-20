@@ -18,7 +18,7 @@ tast the HEALTHY difference
         </p>
       </div> 
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-20'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-10 item-end'>
        <div>
         <p>
             {""}
@@ -27,6 +27,12 @@ tast the HEALTHY difference
             who want eating healthy and tasty food
         </p>
       </div> 
+      </div>
+      <div className='flex justify-center mt-10 sm:mt-14'>
+        <PrimaryButton/>
+      </div>
+      <div>
+        <img src='/te.jpg' alt="Fast Food" className="" />
       </div>
       
       </div>
