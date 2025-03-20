@@ -4,6 +4,7 @@ import Part1 from './componet/Navbar/Part1'
 import Part2 from './componet/Navbar/Part2'
 import Part3 from './componet/Part3'
 import About from './componet/About'
+import Footer from './componet/Footer'
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
     <Part2/>
     <Part3/>
    <About/>
+   <Footer/>
     </div>
   )
 }

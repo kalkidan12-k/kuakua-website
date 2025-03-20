@@ -9,7 +9,7 @@ export default function About() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        height: '100vh',
+        height: '90vh',
       }}   
       >
         <div>
