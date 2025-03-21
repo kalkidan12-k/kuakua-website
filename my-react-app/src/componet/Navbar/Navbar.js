@@ -10,7 +10,7 @@ const MenuLinks = [ { id: 1, name: 'kuakua special', url: '/' },
     {id: 2, name: 'kuakua normal', url: '/' },
     { id: 3, name: 'sandwich', url: '/' },
     { id: 4, name: 'chips', url: '/' },];
-export default function Navbar(onClick=() => setshowPopup(true)) {
+export default function Navbar({HandlePopup}) {
     return (
         <div className='bg-slate-500 text-slate-800'>
             <div className='container flex justify-between py-4 sm:py-3 '>
@@ -48,7 +48,7 @@ export default function Navbar(onClick=() => setshowPopup(true)) {
     </div>
 </li>
 <li>
-    <button  onClick={() => setshowPopup(true)} className='flex justify-center items-center gap-2 bg-sky-400 text-xl  px-4 py-2 h-[40px] text-white hover:scale-105 duration-300 font-semibold'>
+    <button  onClick={HandlePopup} className='flex justify-center items-center gap-2 bg-sky-400 text-xl  px-4 py-2 h-[40px] text-white hover:scale-105 duration-300 font-semibold'>
         <FaUser/>
         My account
     </button>

@@ -10,10 +10,13 @@ import Popup from './componet/Navbar/Popup'
 
 export default function App() {
   const [showPopup, setshowPopup] = React.useState(false);
+  const HandlePopup = () => {
+    setshowPopup(true);
+  };
 
   return (
     <div>
-      <Navbar onClick={() => setshowPopup(true)} />
+      <Navbar HandlePopup={HandlePopup} />
       <Part1 />
       <Part2 />
       <Part3 />
