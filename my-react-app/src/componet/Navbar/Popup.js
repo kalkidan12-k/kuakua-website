@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebook, FaGoogle } from 'react-icons/fa'
 
     import { IoCloseOutline } from 'react-icons/io5'
 
@@ -11,12 +12,39 @@ export default function Popup( {showPopup,setshowPopup}) {
             <h1 className='text-2xl font-bold text-dark'>
                 login
             </h1>
+            <div>
+            <IoCloseOutline className=' text-2xl cursor-pointer
+            onClick={()=>setOrderPopup(flase)}'/>
         </div>
+        </div>
+        <div className='mt-4'>
+            <input type='email' placeholder='enter email'
+            className='w-full rounded-md border border-gray-300
+            px-2 py-1 mb-4'/>
+            <input type='email' placeholder='enter email'
+            className='w-full rounded-md border border-gray-300
+            px-2 py-1 mb-4'/>
+
+        </div>
+        {/* login button*/}
         <div>
-            <IoCloseOutline/>
+        <button className='w-full bg-purple-400 text-white p-2 round-md onClick={()=>setOrderPopup(flase)}'>
+            login
+        </button>
+        </div>
+        {/* othersocial media */}
+        <div>
+        <p className='text-center'>
+   or login to
+        </p>
+        <div className='flex justify-center text-2xl gap-2'>
+            <FaFacebook className='hover:text-blue-400'/>
+            <FaGoogle className='hover:text-purple-400'/>
+        </div>
         </div>
 
         </div>
+        
       </div>
         </div>)}
     </>

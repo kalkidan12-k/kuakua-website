@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar onClick={() => setshowPopup(true)} />
       <Part1 />
       <Part2 />
       <Part3 />
