@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaUser } from 'react-icons/fa';
 
-export default function About() {
+export default function About({HandlePopup} ) {
     return (
       <div
       style={{
@@ -20,7 +20,7 @@ export default function About() {
           Welcome to KUAKUA Where Taste Meets Convenience!
 At KUAKUA, we believe that great food doesn’t have to be complicated. Whether you’re craving a comforting cup of tea, a rich and aromatic coffee, or a deliciously satisfying sandwich, we’ve got something to delight your taste buds. Our menu is designed to bring you the perfect blend of flavor, quality, and affordability.
           
-        <div  className='pt-10 flex justify-center'>
+        <div  onClick={HandlePopup} className='pt-10 flex justify-center'>
         <button className='flex justify-center items-center gap-2 bg-blue-400 text-xl  px-4 py-2 h-[40px] text-white hover:scale-105 duration-300 font-semibold'>
                 <FaUser/>
                 My account

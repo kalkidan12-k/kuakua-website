@@ -20,7 +20,7 @@ export default function App() {
       <Part1 />
       <Part2 />
       <Part3 />
-      <About />
+      <About  HandlePopup={HandlePopup} />
       <Footer />
       <button
         onClick={() => setshowPopup(true)}
