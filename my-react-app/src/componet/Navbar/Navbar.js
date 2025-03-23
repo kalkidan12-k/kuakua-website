@@ -12,26 +12,28 @@ const MenuLinks = [ { id: 1, name: 'kuakua special', url: '/' },
     { id: 4, name: 'chips', url: '/' },];
 export default function Navbar({HandlePopup}) {
     return (
-        <div className='bg-slate-500 text-slate-800'>
-            <div className='container flex justify-between py-4 sm:py-3 '>
-                <div className='font-extrabold text-2xl'>
+        <div className='bg-gray-300 text-stone-950 '>
+            <div className='container flex justify-between py-2 px-4'>
+                <div className='font-extrabold text-xl'>
                     ቋቋ
                 </div>
                 <div>
                     <ul className='flex items-center gap-10'>
                         {Navlinks.map(({ id, title, url }) => (
                             <li key={id}>
-                                <a href={url} className='inline-block hover:text-sky-500 text-xl font-semibold'>{title}</a>
+                                <a href={url} className=' hidden sm:inline-block hover:text-sky-500 text-xs font-semibold'>{title}</a>
                             </li>
                             
                         ))}
                         <li className='cursor-pointer group relative'>
-    <a href="/#" className='hover:bg-sky-600 text-slate-800 px-4 py-2 rounded-md font-semibold'>
-        <div className='flex items-center gap-2'>
+    <a href="/#" className='hover:bg-sky-600 text-stone-950 px-4 py-2 rounded-md text-xs'>
+        <div className=' hidden sm:inline block grid grid-cols-2 items-center gap-2'>
+            <h1>
             menu
-            <span>
+            </h1>
+            <div>
                 <FaChevronDown className='group-hover:rotate-180 duration-300' />
-            </span>
+            </div>
         </div>
     </a>
     {/* Dropdown menu */}
@@ -48,7 +50,7 @@ export default function Navbar({HandlePopup}) {
     </div>
 </li>
 <li>
-    <button  onClick={HandlePopup} className='flex justify-center items-center gap-2 bg-sky-400 text-xl  px-4 py-2 h-[40px] text-white hover:scale-105 duration-300 font-semibold'>
+    <button  onClick={HandlePopup} className='flex justify-center items-center gap-2 bg-sky-400 text-xl  px-4 py-2 h-[20px] text-white hover:scale-105 duration-300 font-semibold'>
         <FaUser/>
         My account
     </button>
