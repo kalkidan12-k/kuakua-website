@@ -27,7 +27,7 @@ export default function Navbar({HandlePopup}) {
                         ))}
                         <li className='cursor-pointer group relative'>
     <a href="/#" className='hover:bg-sky-600 text-stone-950 px-4 py-2 rounded-md text-xs'>
-        <div className=' hidden sm:inline block grid grid-cols-2 items-center gap-2'>
+        <div className='  sm:inline-block grid grid-cols-2 items-center gap-2'>
             <h1>
             menu
             </h1>
